@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arix Signature - Interactive 3D Tree</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { margin: 0; background-color: #01120a; overflow: hidden; color: #d4af37; font-family: 'Playfair Display', serif; }
+        canvas { display: block; }
+        @keyframes shimmer { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
+        .metallic-shimmer {
+            background: linear-gradient(90deg, #d4af37 0%, #fdfcba 20%, #d4af37 40%, #fdfcba 60%, #d4af37 80%, #fdfcba 100%);
+            background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; animation: shimmer 8s linear infinite;
+        }
+        .fade-in-left { animation: fadeInLeft 2s ease-out forwards; }
+        @keyframes fadeInLeft { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
+        .ui-blur { backdrop-filter: blur(12px); background: rgba(1, 18, 10, 0.4); border: 1px solid rgba(212, 175, 55, 0.2); }
+    </style>
+  <script type="module" crossorigin src="/arix-signature-3d-interactive-christmas-tree/assets/index-CRhUdKeg.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
